@@ -1,14 +1,14 @@
 ## v2ray 最新版本
 
-[![](https://images.microbadger.com/badges/version/mritd/v2ray.svg)](https://microbadger.com/images/mritd/v2ray "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/mritd/v2ray.svg)](https://microbadger.com/images/mritd/v2ray "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/yetio/v2ray.svg)](https://microbadger.com/images/yetio/v2ray "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/yetio/v2ray.svg)](https://microbadger.com/images/yetio/v2ray "Get your own image badge on microbadger.com")
 
-> 截至目前该镜像为 v2ray 3.29 版本
+> 截至目前该镜像为 v2ray 4.31.0 版本
 
 ### 打开姿势
 
 ``` sh
-docker pull mritd/v2ray
-docker run -dt --name v2ray -p 10086:10086 mritd/v2ray
+docker pull yetio/v2ray
+docker run -dt --name v2ray -p 10086:10086 yetio/v2ray
 ```
 
 **Container 默认监听 10086 端口**
