@@ -8,7 +8,12 @@ if [ "$CONFIG" != "" ] && [ "$CMD" == "-c" ]; then
   echo -e "\033[32mUse a custom configuration...\033[0m"
 fi
 
-if [ "$CMD" != "" ] && [ "$CMD" != "-c" ]; then
+if [ "$CONFIG" != "" ] && [ "$CMD" == "-l" ]; then
+  wget -O /etc/v2ray/config.json "$CONFIG"
+  echo -e "\033[32mUse a downloaded configuration...\033[0m"
+fi
+
+if [ "$CMD" != "" ] && [ "$CMD" != "-c" ] && [ "$CMD" != "-l" ]; then
   $*
 else
   v2ray -config /etc/v2ray/config.json
